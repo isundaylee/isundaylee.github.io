@@ -1,24 +1,84 @@
-html { 
-  background: url("index.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+html {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover; }
 
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden; }
 
-#links div {
-  text-align: center;
-  font-size: 30px; 
-  margin: 10px; 
-}
+.container {
+  width: 1000px;
+  margin: 0 auto; }
 
-#links div a {
-  color: white; 
-  opacity: 0.8;
-  text-decoration: none; 
-}
+#above {
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative; }
+  #above nav {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center; }
+    #above nav a {
+      font-weight: 300;
+      font-size: 1em;
+      padding: 5px 10px;
+      margin-right: 30px;
+      text-decoration: none;
+      color: white; }
+      #above nav a:hover, #above nav a.active {
+        background-color: white;
+        color: black; }
+  #above #info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+    #above #info h1, #above #info h2 {
+      color: white;
+      text-align: center;
+      width: 100%; }
+    #above #info h1 {
+      font-size: 12vh;
+      font-weight: 900;
+      margin-bottom: 0; }
+    #above #info h2 {
+      font-size: 3vh;
+      font-weight: 200;
+      margin-top: 0;
+      margin-bottom: 50px; }
 
-#links div a:hover {
-  color: #1C50FC; 
-}
+#below {
+  height: 40vh;
+  width: 100vw;
+  background-color: #FCFCFC;
+  padding-top: 10vh; }
+  #below .cell {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 6px solid white;
+    margin: 44px;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    background-color: white; }
+    #below .cell:hover {
+      background-color: #F8F8F8; }
+    #below .cell img {
+      display: block;
+      width: 80px;
+      margin: 40px auto;
+      margin-bottom: 25px; }
+    #below .cell p {
+      text-decoration: none !important;
+      color: #bbb;
+      font-size: 25px;
+      text-align: center;
+      font-weight: 200; }
+    #below .cell:first-child {
+      margin-left: 94px; }
+
+/*# sourceMappingURL=index.css.map */

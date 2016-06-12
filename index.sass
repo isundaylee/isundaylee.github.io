@@ -1,0 +1,97 @@
+$below-background-color: #eee
+
+html
+  background: url("images/background.jpg") no-repeat center center fixed
+  background-size: cover
+
+body
+  margin: 0
+  font-family: "Source Sans Pro", sans-serif
+  overflow: hidden
+
+.container
+  width: 1000px
+  margin: 0 auto
+
+#above
+  height: 50vh
+  width: 100vw
+  background-color: rgba(0, 0, 0, 0.8)
+  position: relative
+
+  nav
+    position: absolute
+    left: 0
+    padding: 20px
+    width: 100%
+    text-align: center
+
+    a
+      font-weight: 300
+      font-size: 1em
+      padding: 5px 10px
+      margin-right: 30px
+      text-decoration: none
+      color: white
+
+      &:hover, &.active
+        background-color: white
+        color: black
+
+  #info
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+    h1, h2
+      color: white
+      text-align: center
+      width: 100%
+
+    h1
+      font-size: 12vh
+      font-weight: 900
+      margin-bottom: 0
+
+    h2
+      font-size: 3vh
+      font-weight: 200
+      margin-top: 0
+      margin-bottom: 50px
+
+#below
+  height: 40vh
+  width: 100vw
+  background-color: #FCFCFC
+  padding-top: 10vh
+
+  .cell
+    display: inline-block
+    width: 200px
+    height: 200px
+    border: 6px solid white
+    margin: 44px
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.1)
+    text-decoration: none
+    background-color: white
+
+    &:hover
+      background-color: #F8F8F8
+
+    img
+      display: block
+      width: 80px
+      margin: 40px auto
+      margin-bottom: 25px
+
+    p
+      text-decoration: none !important
+      color: #bbb
+      font-size: 25px
+      text-align: center
+      font-weight: 200
+
+    &:first-child
+      margin-left: 94px
+
