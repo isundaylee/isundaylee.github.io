@@ -1,8 +1,10 @@
 $(function() {
-    $('[data-fade-in]').hide(); 
+    $('nav').hide(); 
+    $('#info').hide().fadeIn(1000); 
+
     setTimeout(function() {
-        $('[data-fade-in]').each(function(_, el) {
-            $(el).fadeIn(parseInt($(this).data('fade-in'))); 
-        }); 
+        $('nav').fadeIn(1000); 
+        $('#above').animate({height: '50vh'}, 500); 
+        $('#below').animate({height: '40vh'}, 500); 
     }, 1000); 
 }); 
